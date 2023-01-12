@@ -21,3 +21,11 @@ export class AuthGuard implements CanActivate {
     return this.authService.isAuthenticated();
   }
 }
+export class CanEditGuard implements CanActivate {
+  canActivate(
+    next: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot
+  ): boolean {
+    return false;
+  }
+}

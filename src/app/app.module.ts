@@ -15,6 +15,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { MessagesComponent } from './messages/messages.component';
 import { NavHeroComponent } from './nav-hero/nav-hero.component';
+import { AuthenticationService } from './authentication.service';
 
 @NgModule({
   imports: [
@@ -40,5 +41,6 @@ import { NavHeroComponent } from './nav-hero/nav-hero.component';
     NavHeroComponent,
   ],
   bootstrap: [AppComponent],
+  providers: [AuthenticationService],
 })
 export class AppModule {}
