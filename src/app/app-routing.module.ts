@@ -5,8 +5,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
-import { AuthGuard, CanEditGuard } from './auth.guard';
+import { AuthGuard } from './auth.guard';
 import { AuthAuxGuard } from './auth-aux.guard';
+import { CanEditGuard } from './can-edit.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
